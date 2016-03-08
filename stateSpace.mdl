@@ -16,7 +16,7 @@ Model {
       BusOutputAsStruct	      "off"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.198"
+    ComputedModelVersion    "1.199"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -85,9 +85,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "12cfh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Feb 25 18:31:42 2016"
-  RTWModifiedTimeStamp	  378325143
-  ModelVersionFormat	  "1.%<AutoIncrement:198>"
+  LastModifiedDate	  "Tue Mar 08 14:16:34 2016"
+  RTWModifiedTimeStamp	  379345268
+  ModelVersionFormat	  "1.%<AutoIncrement:199>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -203,7 +203,7 @@ Model {
 	  $ObjectID		  9
 	  Version		  "1.15.0"
 	  StartTime		  "0"
-	  StopTime		  "50"
+	  StopTime		  "100"
 	  AbsTol		  "auto"
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
