@@ -1,3 +1,3 @@
 function [ f ] = inputFunc( t )
-	f = exp(-t)*2*sin(t^2);
+	f = t^4/100000000 - (t - 20)^2;
 end

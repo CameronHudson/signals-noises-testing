@@ -23,10 +23,10 @@ end
 
 IOData = iddata(CleanedY,U,Ts);
 
-SSmodelNoise = n4sid(IOData,1:10); %Includes estimate of K noise matrix
-tfNoise = ss2tf(SSmodelNoise.a,SSmodelNoise.b,SSmodelNoise.c,SSmodelNoise.d)
-SSmodelClean = n4sid(IOData,1:10,'DisturbanceModel','none'); %Omits K noise matrix
-tfClean = ss2tf(SSmodelClean.a,SSmodelClean.b,SSmodelClean.c,SSmodelClean.d)
+ SSmodelNoise = n4sid(IOData,1:10); %Includes estimate of K noise matrix
+ tfNoise = ss2tf(SSmodelNoise.a,SSmodelNoise.b,SSmodelNoise.c,SSmodelNoise.d)
+ SSmodelClean = n4sid(IOData,1:10,'DisturbanceModel','none'); %Omits K noise matrix
+ tfClean = ss2tf(SSmodelClean.a,SSmodelClean.b,SSmodelClean.c,SSmodelClean.d)
 
 
 

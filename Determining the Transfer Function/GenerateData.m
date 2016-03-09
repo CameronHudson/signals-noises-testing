@@ -4,6 +4,7 @@ set(blackBox,'visible','off');
 Ts = 0.002; %SampleTime
 fileName = 'chirpFunc';
 
+%CHIRP: 'exp(-t)*2*sin(t^2)'
 
 % Find handle to hidden figure
 temp = get(0,'showHiddenHandles');
@@ -17,7 +18,7 @@ handles = guidata(hfig);
 % This will let you pick the Field radio button
 set(handles.radioField, 'Value', 1);
 % This changes the equation in the Field textbox
-set(handles.input, 'String', 'exp(-t)*2*sin(t^2)' );
+set(handles.input, 'String', FuncStr );
 blackBox('input_Callback',handles.input,[],handles);
 
 
