@@ -1,8 +1,6 @@
 blackBox
 fileName = 'NoiseVomit';
 
-%CHIRP: 'exp(-t)*2*sin(t^2)'
-
 % Find handle to hidden figure
 temp = get(0,'showHiddenHandles');
 set(0,'showHiddenHandles','on');
@@ -23,7 +21,7 @@ blackBox('input_Callback',handles.input,[],handles);
 % This changes the start time
 set(handles.axisStart, 'String', '0');
 % This changes the end time
-set(handles.axisEnd, 'String', '1000');
+set(handles.axisEnd, 'String', '20');
 % This changes the step size
 set(handles.stepSize, 'String', 0.002);
 % This changes the refine output
