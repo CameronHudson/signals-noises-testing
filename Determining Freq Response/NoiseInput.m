@@ -1,8 +1,5 @@
 blackBox
-set(blackBox,'visible','off');
-
-Ts = 0.002; %SampleTime
-fileName = 'chirpFunc';
+fileName = 'NoiseVomit';
 
 %CHIRP: 'exp(-t)*2*sin(t^2)'
 
@@ -15,18 +12,20 @@ handles = guidata(hfig);
 
 %================Start Editing=============================================
 
-% This will let you pick the Field radio button
-set(handles.radioField, 'Value', 1);
+% This will let you pick the File radio button
+set(handles.radioFile, 'Value', 1);
+set(handles.inputFile, 'String', 'NoiseMaker' );
+
 % This changes the equation in the Field textbox
-set(handles.input, 'String', FuncStr );
 blackBox('input_Callback',handles.input,[],handles);
+
 
 % This changes the start time
 set(handles.axisStart, 'String', '0');
 % This changes the end time
-set(handles.axisEnd, 'String', '100');
+set(handles.axisEnd, 'String', '1000');
 % This changes the step size
-set(handles.stepSize, 'String', Ts);
+set(handles.stepSize, 'String', 0.002);
 % This changes the refine output
 set(handles.refineOutput, 'String', '1');
 
@@ -49,4 +48,3 @@ blackBox('save_Callback',handles.save,[],handles);
 %=======================End Editing======================================
 set(0,'showHiddenHandles',temp);
 close(blackBox);
-

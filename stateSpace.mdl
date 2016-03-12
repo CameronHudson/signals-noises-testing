@@ -16,7 +16,7 @@ Model {
       BusOutputAsStruct	      "off"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.199"
+    ComputedModelVersion    "1.200"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -49,7 +49,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [14.0, 369.0, 705.0, 540.0]
+      Location		      [988.0, 192.0, 705.0, 540.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -85,9 +85,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "12cfh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Mar 08 14:16:34 2016"
-  RTWModifiedTimeStamp	  379345268
-  ModelVersionFormat	  "1.%<AutoIncrement:199>"
+  LastModifiedDate	  "Sat Mar 12 16:25:48 2016"
+  RTWModifiedTimeStamp	  379700746
+  ModelVersionFormat	  "1.%<AutoIncrement:200>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -843,7 +843,7 @@ Model {
   }
   System {
     Name		    "stateSpace"
-    Location		    [14, 369, 719, 909]
+    Location		    [988, 192, 1693, 732]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -862,7 +862,7 @@ Model {
       BlockType		      Inport
       Name		      "In1"
       SID		      "2"
-      Position		      [45, 43, 75, 57]
+      Position		      [45, 153, 75, 167]
       ZOrder		      -1
       IconDisplay	      "Port number"
     }
@@ -892,9 +892,10 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      2
+      ZOrder		      5
       SrcBlock		      "In1"
       SrcPort		      1
+      Points		      [48, 0; 0, -110]
       DstBlock		      "S-Function"
       DstPort		      1
     }
