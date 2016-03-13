@@ -1,0 +1,91 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Report.aux
+The style file: plain.bst
+Database file #1: reportBibliography.bib.bib
+Warning--entry type for "mathwebsite" isn't style-file defined
+--line 1 of file reportBibliography.bib.bib
+I was expecting a `,' or a `}'---line 57 of file reportBibliography.bib.bib
+ : @online{data 
+ :              mining 1,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 65 of file reportBibliography.bib.bib
+ : @techreport{data 
+ :                  mining 2,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 72 of file reportBibliography.bib.bib
+ : @online{data 
+ :              mining 3,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 80 of file reportBibliography.bib.bib
+ : @periodical{data 
+ :                  mining 4,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 88 of file reportBibliography.bib.bib
+ : @online{data 
+ :              mining 5,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 96 of file reportBibliography.bib.bib
+ : @article{data 
+ :               mining 6,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 104 of file reportBibliography.bib.bib
+ : @article{data 
+ :               mining 7,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 112 of file reportBibliography.bib.bib
+ : @article{data 
+ :               mining 8,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 120 of file reportBibliography.bib.bib
+ : @online{data 
+ :              mining 9,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 128 of file reportBibliography.bib.bib
+ : @techreport{data 
+ :                  mining 10,
+I'm skipping whatever remains of this entry
+Warning--empty institution in reverseengineering2
+Warning--empty year in reverseengineering2
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            524 strings with 4694 characters,
+and the built_in function-call counts, 1167 in all, are:
+= -- 113
+> -- 35
+< -- 0
++ -- 15
+- -- 10
+* -- 66
+:= -- 213
+add.period$ -- 14
+call.type$ -- 5
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 45
+empty$ -- 105
+format.name$ -- 10
+if$ -- 238
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 27
+num.names$ -- 10
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 61
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 2
+while$ -- 12
+width$ -- 6
+write$ -- 52
+(There were 10 error messages)

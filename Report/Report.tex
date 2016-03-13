@@ -1,0 +1,92 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{cite}
+\addbibresource{reportBibiography.bib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbold}
+\usepackage{fullpage}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{gensymb}
+\title{Black Box Systems: Reverse Engineering & Control\\MTHE 393 Interim Report}
+\date{Monday March $14^{\textrm{th}}$, 2016}
+\author{Gillian Sandison (10096880)\\Andrew Cantanna (10092489) \\Cameron Hudson (10092287)\\
+James Szoke (10085958)\\}
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\subsection{Scope}
+
+The team was tasked with determining a linear, time-invariant state-space or transfer function that can be utilized to heuristically model an unknown system \cite{mathwebsite}.  A black box system which takes any input signal and produces a noisy output signal was provided. The internal workings of the black box were unknown, so the output noise was filtered and allowed the team to produce transfer functions and bode plots of the output signal. Given this information, the team was able to accurately approximate the system. This system will then be applied to data mining and amplifier profiling applications, taking into account economic, environmental and social impacts.
+\par
+\subsection{Purpose}
+Filtering output signals is critical in many applications, as it allows for useful information to be extracted from the output signal.  If a noisy output signal is created, it will result in random information being produced. This will ultimately hinder the performance of the system. As a result, in order to effectively apply this system to an engineering application, the amount of noise produced in the output signal needs to be minimized in order to reduce the amount of random information being generated.
+
+
+\section{Progress to date}
+
+Describe in some detail what you have been doing and how.
+
+\subsection{Methodology}
+
+How have you been attacking the problem?  What sorts of assumptions have you had to make?  Why do you think those assumptions are valid?  Be specific about what you have done that has worked.  Do not spend even an iota of time saying what you tried and did not work.
+
+\subsubsection{Filtering Options}
+For any random input signal applied to the black box system, the output signal randomly generated noise. Three unique filtering options were applied in order to minimize the noise produced in the output.  The first filter utilized was a butter-worth filter.  A butter-worth filter is a low-pass filter which eliminates high frequency content in the output.  The second filter utilized was a median filter.  A median filter takes the average value of the output over small intervals. The output was uniquely produced 30 times, and the median filter was applied among these signals to generate a new averaged signal. The final filtering method utilized was unique, and involved redefining Matlab's random number generator. By implementing a new random number generator that only outputs zeros, the team was able to completely eliminate noise from the output.  Although this is a non traditional approach, it allowed for the team to produce more accurate bode plots and reverse engineer a precise filter.
+\par
+
+%\subsection{Results (if any)}
+
+%If you have data to display, display it.  If you have a working model, tell us what it is.
+
+\section{Applications}
+\subsection{Reverse Engineering and its Implications}
+Reverse engineering can be defined as the process of analyzing a system in order to determine how it works. This can be done by analyzing its inner components and trying to produce an enhanced understanding of the system \cite{reverseengineering}.
+Duplication can be extremely valuable for understanding how a system operates.  In turn, this can allow for repairs, modifications and improvements to be implemented into the system\cite{reverseengineering}.
+Reverse engineering is common practice in many industries, but tends to be prevalent in the automotive industry. An example of this is when an automotive manufacturing company needs a part, but the original manufacturer has gone out of business or does not produce the part any more. In order to use the component, they have to reproduce the existing part. Additionally, reverse engineering can be used to reduce the time spent on research and development for a new product.  This can be done by duplicating an existing part, and adding specific improvements to it\cite{reverseengineering2}.
+\par
+There have been a number of laws introduced around the concept of reverse engineering. In 1998, the United States implemented the Digital Millennium Copyright Act. The act forbids any service or device from being designed to circumvent, or even being marketed to circumvent any Digital Rights Management [4]. There is an exception to this act, stating that reverse engineering can be done if the modified and original components are interacting with each other.
+If the product has been purchased legally, the product may be circumvented in order to identify and analyze the elements used within the product to develop a new product that is independent of the one being analyzed that interacts and operates with the current product. This is provided that the product being developed is not already available in the market, and that the users do not infringe on the title.
+Additionally, implemented security measures on a product may be circumvented for the purpose of identifying and analyzing components of a product,to create a new product that provided that the user does not infringe on the title.
+If a new product is successfully developed, it may be distributed if the new product is interoperable with the current product or is completely independent and does not infringe on the current title.
+What regulatory concerns impinge upon the sort of technology you are developing?  Are there specific concerns that arise due to the sorts of customers you imagine your technology being useful for?
+\subsection{Example Application 1: Guitar Amplifier Modeling and Control}
+Guitar amplifiers  make up a core component of the sound of popular music over the last half century and continue to be a mainstay in recordings and live performances. This is despite the advent of technologies like synthesizers, DAWs (Digital Audio Workstations),  and VSTs (Virtual Studio Technology plugins) that have largely eliminated the need for many of the musicians and hardware tools featured on recordings in the past
+
+\cite{specialIntroGuitar}.
+
+A typical
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=100mm]{AmpBlockDiagram.JPG}
+\caption{Block diagram of a typical guitar tube amplifier. \label{overflow}}
+\end{figure}
+
+The concept of digital amplifier simulation first rose to popularity
+\par
+From an economic perspective, the motivation clearly exists; the National Association of Music Merchants' member stores reported that musical instrument amplifier sales totaled \$186 million USD for 8 million units sold in the United States. \cite{NAMMReport}.
+
+\section{Plans for the future}
+
+Outline your plans for the remainder of the term.  Use a Gantt chart, whatever that is.
+
+\bibliography{reportBibliography.bib}{}
+\bibliographystyle{plain}
+
+\end{document}
