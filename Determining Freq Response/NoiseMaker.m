@@ -1,9 +1,9 @@
 function [ f ] = NoiseMaker( t )
-    if t == 0
-        f = 0;
-    else
-        i = cast(t/0.002,'int64');
+    if t ~= 0
+        i = cast(t/0.002,'int64')
         load('noise.mat')
         f = noise(i);
+    else
+        f = 0;
     end
 end

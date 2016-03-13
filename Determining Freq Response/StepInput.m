@@ -1,10 +1,5 @@
 blackBox
-set(blackBox,'visible','off');
-
-Ts = 0.002; %SampleTime
-fileName = 'chirpFunc';
-
-%CHIRP: 'exp(-t)*2*sin(t^2)'
+fileName = 'StepOut';
 
 % Find handle to hidden figure
 temp = get(0,'showHiddenHandles');
@@ -15,23 +10,26 @@ handles = guidata(hfig);
 
 %================Start Editing=============================================
 
-% This will let you pick the Field radio button
-set(handles.radioField, 'Value', 1);
-% This changes the equation in the Field textbox
-set(handles.input, 'String', FuncStr );
-blackBox('input_Callback',handles.input,[],handles);
+% This will let you pick the File radio button
+set(handles.radioFile, 'Value', 1);
+set(handles.inputFile, 'String', 'Step' );
+
+% % This will let you pick the Field radio button
+% set(handles.radioField, 'Value', 1);
+% % This changes the equation in the Field textbox
+% set(handles.input, 'String', 'kroneckerDelta(t)' );
+% blackBox('input_Callback',handles.input,[],handles);
+
 
 % This changes the start time
 set(handles.axisStart, 'String', '0');
 % This changes the end time
-set(handles.axisEnd, 'String', '100');
+set(handles.axisEnd, 'String', '6000');
 % This changes the step size
-set(handles.stepSize, 'String', Ts);
+set(handles.stepSize, 'String', 0.0005);
 % This changes the refine output
 set(handles.refineOutput, 'String', '1');
 
-% Use the run button twice since the black box sucks a lot
-blackBox('run_Callback',handles.run,[],handles);
 blackBox('run_Callback',handles.run,[],handles);
 
 
@@ -48,6 +46,4 @@ blackBox('save_Callback',handles.save,[],handles);
 
 %=======================End Editing======================================
 set(0,'showHiddenHandles',temp);
-set(blackBox,'visible','on');
-close(blackBox);
-
+%close(blackBox);

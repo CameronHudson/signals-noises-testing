@@ -21,14 +21,13 @@ blackBox('input_Callback',handles.input,[],handles);
 % This changes the start time
 set(handles.axisStart, 'String', '0');
 % This changes the end time
-set(handles.axisEnd, 'String', '20');
+set(handles.axisEnd, 'String', '100');
 % This changes the step size
 set(handles.stepSize, 'String', 0.002);
 % This changes the refine output
 set(handles.refineOutput, 'String', '1');
 
 % Use the run button twice since the black box sucks a lot
-blackBox('run_Callback',handles.run,[],handles);
 blackBox('run_Callback',handles.run,[],handles);
 
 
