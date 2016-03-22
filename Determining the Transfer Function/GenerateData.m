@@ -1,8 +1,8 @@
 blackBox
 set(blackBox,'visible','off');
 
-Ts = 0.002; %SampleTime
-fileName = 'chirpFunc';
+Ts = 0.0002; %SampleTime
+fileName = 'test2impulse';
 
 %CHIRP: 'exp(-t)*2*sin(t^2)'
 
@@ -18,13 +18,13 @@ handles = guidata(hfig);
 % This will let you pick the Field radio button
 set(handles.radioField, 'Value', 1);
 % This changes the equation in the Field textbox
-set(handles.input, 'String', FuncStr );
+set(handles.input, 'String','exp(-t)*2*sin(t^2)');
 blackBox('input_Callback',handles.input,[],handles);
 
 % This changes the start time
 set(handles.axisStart, 'String', '0');
 % This changes the end time
-set(handles.axisEnd, 'String', '100');
+set(handles.axisEnd, 'String', '50');
 % This changes the step size
 set(handles.stepSize, 'String', Ts);
 % This changes the refine output
