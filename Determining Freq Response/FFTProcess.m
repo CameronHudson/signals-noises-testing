@@ -10,21 +10,18 @@ Time = StepOut.input.time;
 TransformedInput = fft(In);
 TransformedNoise = fft(Signal);
 something = TransformedNoise./TransformedInput;
-something = (TransformedNoise./TransformedInput);
 
 booty = abs(something);
 N = length(Time);
 frequency = [0:N-1]'/(N*Ts);
 
 figure(1);
-xvals = loglog(frequency,booty);
-
-figure(2);
-bode(ans);
+bootydb = mag2db(booty);
+vals = semilogx(frequency,bootydb);
 
 p=unwrap(angle(something)).*180./pi + 360;
 
-figure(3)
+figure(2)
 semilogx(frequency,p)
 
 
